@@ -9,7 +9,7 @@ metadata:
     jira/project-key: JETP
   links:
     - title: Repository
-      url: https://github.com/jamf/spring-boot-example
+      url: https://github.com/Adityatomar1/spring-boot-example.git
 
 spec:
   type: service
