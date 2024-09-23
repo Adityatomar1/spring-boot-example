@@ -23,3 +23,304 @@
 2024-09-23T12:04:59.242+05:30  INFO 5072 --- [Simple-Language-Server main thread] o.s.i.v.boot.jdt.ls.JdtLsProjectCache    : INIT CLASSPATH LISTENER enableClasspath=false
 2024-09-23T12:04:59.244+05:30  INFO 5072 --- [Simple-Language-Server main thread] o.s.i.v.boot.jdt.ls.JdtLsProjectCache    : Enable classpath listener enabled = false current enablement = false
 2024-09-23T12:04:59.246+05:30  INFO 5072 --- [Simple-Language-Server main thread] o.s.i.v.c.l.util.SimpleLanguageServer    : Initialization completed after 3950 ms
+2024-09-23T12:09:51.641+05:30  INFO 1248 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : Starting BootLanguageServerBootApp v1.57.0-SNAPSHOT using Java 17.0.12 with PID 1248 (C:\Users\msi1\.vscode\extensions\vmware.vscode-spring-boot-1.57.0\language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar started by msi1 in d:\reactjs\spring-boot-example)
+2024-09-23T12:09:51.645+05:30  INFO 1248 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : No active profile set, falling back to 1 default profile: "default"
+2024-09-23T12:09:51.647+05:30 DEBUG 1248 --- [main] o.s.boot.SpringApplication               : Loading source class org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+2024-09-23T12:09:56.342+05:30  INFO 3980 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : Starting BootLanguageServerBootApp v1.57.0-SNAPSHOT using Java 17.0.12 with PID 3980 (C:\Users\msi1\.vscode\extensions\vmware.vscode-spring-boot-1.57.0\language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar started by msi1 in d:\reactjs\spring-boot-example)
+2024-09-23T12:09:56.346+05:30  INFO 3980 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : No active profile set, falling back to 1 default profile: "default"
+2024-09-23T12:09:56.350+05:30 DEBUG 3980 --- [main] o.s.boot.SpringApplication               : Loading source class org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+2024-09-23T12:09:57.889+05:30  INFO 3980 --- [main] o.s.i.vscode.boot.app.SpringSymbolIndex  : project listener registered
+2024-09-23T12:09:59.874+05:30  INFO 19328 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : Starting BootLanguageServerBootApp v1.57.0-SNAPSHOT using Java 17.0.12 with PID 19328 (C:\Users\msi1\.vscode\extensions\vmware.vscode-spring-boot-1.57.0\language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar started by msi1 in d:\reactjs\spring-boot-example)
+2024-09-23T12:09:59.879+05:30  INFO 19328 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : No active profile set, falling back to 1 default profile: "default"
+2024-09-23T12:09:59.880+05:30 DEBUG 19328 --- [main] o.s.boot.SpringApplication               : Loading source class org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+2024-09-23T12:10:01.080+05:30  INFO 19328 --- [main] o.s.i.vscode.boot.app.SpringSymbolIndex  : project listener registered
+2024-09-23T12:10:01.307+05:30 DEBUG 19328 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   BootLanguageServerBootApp#adHocProperties matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootLanguageServerBootApp#javaProjectsService matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootLanguageServerBootApp#serverParams matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootLanguageServerBootApp#sourceLinks matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootLanguageServerBootApp#symbolCache matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootVersionValidationConfig#bootVersionValidationScheduler matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+      - @ConditionalOnProperty (languageserver.reconcile-only-opened-docs=false) matched (OnPropertyCondition)
+
+   LanguageServerAutoConf#languageServer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ide.vscode.commons.languageserver.util.SimpleLanguageServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LanguageServerAutoConf#registerDefinitionHandler matched:
+      - @ConditionalOnBean (types: org.springframework.ide.vscode.commons.languageserver.util.DefinitionHandler; SearchStrategy: all) found beans 'yamlPropertiesJavaDefinitionHandler', 'propertiesJavaDefinitionHandler', 'xmlBeansConfigDefinitionHandler', 'javaDefinitionHandler' (OnBeanCondition)
+
+   LanguageServerRunnerAutoConf#messageConsumer matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   LanguageServerRunnerAutoConf#serverApp matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   RewriteConfig#rewriteCodeActionHandler matched:
+      - @ConditionalOnBean (types: org.springframework.ide.vscode.boot.java.rewrite.RewriteRecipeRepository; SearchStrategy: all) found bean 'rewriteRecipesRepository' (OnBeanCondition)
+
+   RewriteConfig#rewriteRefactorings matched:
+      - @ConditionalOnBean (types: org.springframework.ide.vscode.boot.java.rewrite.RewriteRecipeRepository; SearchStrategy: all) found bean 'rewriteRecipesRepository' (OnBeanCondition)
+
+   RewriteConfig#springBootUpgrade matched:
+      - @ConditionalOnBean (types: org.springframework.ide.vscode.boot.java.rewrite.RewriteRecipeRepository; SearchStrategy: all) found bean 'rewriteRecipesRepository' (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   LanguageServerAutoConf#defaultDiagnosticSeverityProvider:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.ide.vscode.commons.languageserver.reconcile.DiagnosticSeverityProvider; SearchStrategy: all) found beans of type 'org.springframework.ide.vscode.commons.languageserver.reconcile.DiagnosticSeverityProvider' bootDiagnosticSeverityProvider (OnBeanCondition)
+
+   LanguageServerAutoConf#registerDocumentSymbolHandler:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.ide.vscode.commons.languageserver.util.DocumentSymbolHandler; SearchStrategy: all) did not find any beans of type org.springframework.ide.vscode.commons.languageserver.util.DocumentSymbolHandler (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.ide.vscode.languageserver.starter.LanguageServerRunnerAutoConf
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.ide.vscode.languageserver.starter.LanguageServerAutoConf
+
+
+
+2024-09-23T12:10:01.321+05:30  INFO 19328 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : Started BootLanguageServerBootApp in 2.231 seconds (process running for 3.098)
+2024-09-23T12:10:01.326+05:30  INFO 19328 --- [main] o.s.i.v.c.l.LanguageServerRunner         : java.home = c:\Users\msi1\.vscode\extensions\redhat.java-1.34.0-win32-x64\jre\17.0.12-win32-x86_64
+2024-09-23T12:10:01.329+05:30  INFO 19328 --- [LanguageServerApp-lifecycle] o.s.i.v.c.l.LanguageServerRunner         : Server ready to start after 3106 ms
+2024-09-23T12:10:01.329+05:30  INFO 19328 --- [LanguageServerApp-lifecycle] o.s.i.v.c.l.LanguageServerRunner         : Starting LS as client
+2024-09-23T12:10:01.329+05:30  INFO 19328 --- [LanguageServerApp-lifecycle] o.s.i.v.c.l.LanguageServerRunner         : Connected to parent using stdio
+2024-09-23T12:10:01.461+05:30  INFO 19328 --- [pool-14-thread-1] o.s.i.v.c.l.util.SimpleLanguageServer    : Initializing
+2024-09-23T12:10:01.480+05:30  INFO 19328 --- [pool-14-thread-1] u.CompletionServerCapabilityRegistration : hasDynamicCompletionRegistration = true
+2024-09-23T12:10:01.481+05:30  INFO 19328 --- [pool-14-thread-1] o.s.i.v.c.l.util.SimpleLanguageServer    : Returning server capabilities to client
+2024-09-23T12:10:03.376+05:30  INFO 12828 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : Starting BootLanguageServerBootApp v1.57.0-SNAPSHOT using Java 17.0.12 with PID 12828 (C:\Users\msi1\.vscode\extensions\vmware.vscode-spring-boot-1.57.0\language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar started by msi1 in d:\reactjs\spring-boot-example)
+2024-09-23T12:10:03.380+05:30  INFO 12828 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : No active profile set, falling back to 1 default profile: "default"
+2024-09-23T12:10:03.385+05:30 DEBUG 12828 --- [main] o.s.boot.SpringApplication               : Loading source class org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+2024-09-23T12:10:04.576+05:30  INFO 12828 --- [main] o.s.i.vscode.boot.app.SpringSymbolIndex  : project listener registered
+2024-09-23T12:10:04.837+05:30 DEBUG 12828 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   BootLanguageServerBootApp#adHocProperties matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootLanguageServerBootApp#javaProjectsService matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootLanguageServerBootApp#serverParams matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootLanguageServerBootApp#sourceLinks matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootLanguageServerBootApp#symbolCache matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootVersionValidationConfig#bootVersionValidationScheduler matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+      - @ConditionalOnProperty (languageserver.reconcile-only-opened-docs=false) matched (OnPropertyCondition)
+
+   LanguageServerAutoConf#languageServer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ide.vscode.commons.languageserver.util.SimpleLanguageServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LanguageServerAutoConf#registerDefinitionHandler matched:
+      - @ConditionalOnBean (types: org.springframework.ide.vscode.commons.languageserver.util.DefinitionHandler; SearchStrategy: all) found beans 'yamlPropertiesJavaDefinitionHandler', 'propertiesJavaDefinitionHandler', 'xmlBeansConfigDefinitionHandler', 'javaDefinitionHandler' (OnBeanCondition)
+
+   LanguageServerRunnerAutoConf#messageConsumer matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   LanguageServerRunnerAutoConf#serverApp matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   RewriteConfig#rewriteCodeActionHandler matched:
+      - @ConditionalOnBean (types: org.springframework.ide.vscode.boot.java.rewrite.RewriteRecipeRepository; SearchStrategy: all) found bean 'rewriteRecipesRepository' (OnBeanCondition)
+
+   RewriteConfig#rewriteRefactorings matched:
+      - @ConditionalOnBean (types: org.springframework.ide.vscode.boot.java.rewrite.RewriteRecipeRepository; SearchStrategy: all) found bean 'rewriteRecipesRepository' (OnBeanCondition)
+
+   RewriteConfig#springBootUpgrade matched:
+      - @ConditionalOnBean (types: org.springframework.ide.vscode.boot.java.rewrite.RewriteRecipeRepository; SearchStrategy: all) found bean 'rewriteRecipesRepository' (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   LanguageServerAutoConf#defaultDiagnosticSeverityProvider:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.ide.vscode.commons.languageserver.reconcile.DiagnosticSeverityProvider; SearchStrategy: all) found beans of type 'org.springframework.ide.vscode.commons.languageserver.reconcile.DiagnosticSeverityProvider' bootDiagnosticSeverityProvider (OnBeanCondition)
+
+   LanguageServerAutoConf#registerDocumentSymbolHandler:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.ide.vscode.commons.languageserver.util.DocumentSymbolHandler; SearchStrategy: all) did not find any beans of type org.springframework.ide.vscode.commons.languageserver.util.DocumentSymbolHandler (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.ide.vscode.languageserver.starter.LanguageServerRunnerAutoConf
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.ide.vscode.languageserver.starter.LanguageServerAutoConf
+
+
+
+2024-09-23T12:10:04.853+05:30  INFO 12828 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : Started BootLanguageServerBootApp in 2.308 seconds (process running for 3.168)
+2024-09-23T12:10:04.861+05:30  INFO 12828 --- [main] o.s.i.v.c.l.LanguageServerRunner         : java.home = c:\Users\msi1\.vscode\extensions\redhat.java-1.34.0-win32-x64\jre\17.0.12-win32-x86_64
+2024-09-23T12:10:04.866+05:30  INFO 12828 --- [LanguageServerApp-lifecycle] o.s.i.v.c.l.LanguageServerRunner         : Server ready to start after 3181 ms
+2024-09-23T12:10:04.866+05:30  INFO 12828 --- [LanguageServerApp-lifecycle] o.s.i.v.c.l.LanguageServerRunner         : Starting LS as client
+2024-09-23T12:10:04.867+05:30  INFO 12828 --- [LanguageServerApp-lifecycle] o.s.i.v.c.l.LanguageServerRunner         : Connected to parent using stdio
+2024-09-23T12:10:05.037+05:30  INFO 12828 --- [pool-14-thread-1] o.s.i.v.c.l.util.SimpleLanguageServer    : Initializing
+2024-09-23T12:10:05.075+05:30  INFO 12828 --- [pool-14-thread-1] u.CompletionServerCapabilityRegistration : hasDynamicCompletionRegistration = true
+2024-09-23T12:10:05.078+05:30  INFO 12828 --- [pool-14-thread-1] o.s.i.v.c.l.util.SimpleLanguageServer    : Returning server capabilities to client
+2024-09-23T12:10:06.735+05:30  INFO 11216 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : Starting BootLanguageServerBootApp v1.57.0-SNAPSHOT using Java 17.0.12 with PID 11216 (C:\Users\msi1\.vscode\extensions\vmware.vscode-spring-boot-1.57.0\language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar started by msi1 in d:\reactjs\spring-boot-example)
+2024-09-23T12:10:06.741+05:30  INFO 11216 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : No active profile set, falling back to 1 default profile: "default"
+2024-09-23T12:10:06.742+05:30 DEBUG 11216 --- [main] o.s.boot.SpringApplication               : Loading source class org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+2024-09-23T12:10:07.846+05:30  INFO 11216 --- [main] o.s.i.vscode.boot.app.SpringSymbolIndex  : project listener registered
+2024-09-23T12:10:08.138+05:30 DEBUG 11216 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   BootLanguageServerBootApp#adHocProperties matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootLanguageServerBootApp#javaProjectsService matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootLanguageServerBootApp#serverParams matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootLanguageServerBootApp#sourceLinks matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootLanguageServerBootApp#symbolCache matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   BootVersionValidationConfig#bootVersionValidationScheduler matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+      - @ConditionalOnProperty (languageserver.reconcile-only-opened-docs=false) matched (OnPropertyCondition)
+
+   LanguageServerAutoConf#languageServer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ide.vscode.commons.languageserver.util.SimpleLanguageServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LanguageServerAutoConf#registerDefinitionHandler matched:
+      - @ConditionalOnBean (types: org.springframework.ide.vscode.commons.languageserver.util.DefinitionHandler; SearchStrategy: all) found beans 'yamlPropertiesJavaDefinitionHandler', 'propertiesJavaDefinitionHandler', 'xmlBeansConfigDefinitionHandler', 'javaDefinitionHandler' (OnBeanCondition)
+
+   LanguageServerRunnerAutoConf#messageConsumer matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   LanguageServerRunnerAutoConf#serverApp matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.springframework.ide.vscode.languageserver.testharness.LanguageServerHarness' (OnClassCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   RewriteConfig#rewriteCodeActionHandler matched:
+      - @ConditionalOnBean (types: org.springframework.ide.vscode.boot.java.rewrite.RewriteRecipeRepository; SearchStrategy: all) found bean 'rewriteRecipesRepository' (OnBeanCondition)
+
+   RewriteConfig#rewriteRefactorings matched:
+      - @ConditionalOnBean (types: org.springframework.ide.vscode.boot.java.rewrite.RewriteRecipeRepository; SearchStrategy: all) found bean 'rewriteRecipesRepository' (OnBeanCondition)
+
+   RewriteConfig#springBootUpgrade matched:
+      - @ConditionalOnBean (types: org.springframework.ide.vscode.boot.java.rewrite.RewriteRecipeRepository; SearchStrategy: all) found bean 'rewriteRecipesRepository' (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   LanguageServerAutoConf#defaultDiagnosticSeverityProvider:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.ide.vscode.commons.languageserver.reconcile.DiagnosticSeverityProvider; SearchStrategy: all) found beans of type 'org.springframework.ide.vscode.commons.languageserver.reconcile.DiagnosticSeverityProvider' bootDiagnosticSeverityProvider (OnBeanCondition)
+
+   LanguageServerAutoConf#registerDocumentSymbolHandler:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.ide.vscode.commons.languageserver.util.DocumentSymbolHandler; SearchStrategy: all) did not find any beans of type org.springframework.ide.vscode.commons.languageserver.util.DocumentSymbolHandler (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.ide.vscode.languageserver.starter.LanguageServerRunnerAutoConf
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.ide.vscode.languageserver.starter.LanguageServerAutoConf
+
+
+
+2024-09-23T12:10:08.150+05:30  INFO 11216 --- [main] o.s.i.v.b.app.BootLanguageServerBootApp  : Started BootLanguageServerBootApp in 2.031 seconds (process running for 2.849)
+2024-09-23T12:10:08.155+05:30  INFO 11216 --- [main] o.s.i.v.c.l.LanguageServerRunner         : java.home = c:\Users\msi1\.vscode\extensions\redhat.java-1.34.0-win32-x64\jre\17.0.12-win32-x86_64
+2024-09-23T12:10:08.157+05:30  INFO 11216 --- [LanguageServerApp-lifecycle] o.s.i.v.c.l.LanguageServerRunner         : Server ready to start after 2857 ms
+2024-09-23T12:10:08.158+05:30  INFO 11216 --- [LanguageServerApp-lifecycle] o.s.i.v.c.l.LanguageServerRunner         : Starting LS as client
+2024-09-23T12:10:08.158+05:30  INFO 11216 --- [LanguageServerApp-lifecycle] o.s.i.v.c.l.LanguageServerRunner         : Connected to parent using stdio
+2024-09-23T12:10:08.292+05:30  INFO 11216 --- [pool-14-thread-1] o.s.i.v.c.l.util.SimpleLanguageServer    : Initializing
+2024-09-23T12:10:08.312+05:30  INFO 11216 --- [pool-14-thread-1] u.CompletionServerCapabilityRegistration : hasDynamicCompletionRegistration = true
+2024-09-23T12:10:08.313+05:30  INFO 11216 --- [pool-14-thread-1] o.s.i.v.c.l.util.SimpleLanguageServer    : Returning server capabilities to client
